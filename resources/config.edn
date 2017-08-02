@@ -1,0 +1,11 @@
+{:port     8083
+ :database {:host     "postgres"
+            :port     5432
+            :user     "cbservice"
+            :password "cbservice"
+            :name     "cbservice"}
+ :amqp     {:url                          "amqp://guest:guest@rmq:5672"
+            :raw-sessions-queue-name      "sessions.raw.cb-service"
+            :connection-events-queue-name "ocpp.connection-events.cb-service"
+            :sessions-exchange            "sessions"
+            :sessions-evse-routing-key    "sessions.with-evse"}}
